@@ -6,13 +6,19 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
-  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/plugin.cjs.js"
+    }
+  },
   "files": [
     "android/src/main/",
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorPluginPrinter.podspec",
+    "JnhtrCapacitorPluginPrinter.podspec",
     "LICENSE",
     "README.md",
     "CONTRIBUTORS.md"
