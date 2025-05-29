@@ -1,4 +1,4 @@
-package com.bcyesil.capacitor.printer;
+package com.capacitor.printer;
 
 import android.content.Context;
 import android.os.Bundle;
